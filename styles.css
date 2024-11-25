@@ -78,16 +78,22 @@ footer {
 @media only screen and (max-width: 768px) {
     .hero-content {
         flex-direction: column; /* Stack image and text vertically */
-        align-items: center; /* Center align both image and text */
+        align-items: center; /* Center-align both image and text */
+        padding: 0 20px; /* Add padding on the sides for better spacing */
     }
 
     .hero-text, .hero-image {
         width: 100%; /* Both image and text take full width */
-        text-align: center; /* Center-align text and image */
+        text-align: center; /* Center-align text */
+        margin: 0; /* Remove any default margin */
+        padding: 10px 0; /* Add vertical padding for spacing */
     }
 
     .hero-image img {
-        margin: 0 auto; /* Center the image horizontally */
+        max-width: 100%; /* Ensure the image scales responsively */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 50%; /* Optional: Rounded corners */
+        margin-top: 20px; /* Add some space above the image */
     }
 }
 
