@@ -102,3 +102,11 @@ p {
     display: block;
     font-family: Corbel, serif;
 }
+
+a.custom-link {
+    color: blue; /* Set link color to blue */
+    text-decoration: none; /* Remove underline */
+}
+a.custom-link:hover {
+    text-decoration: underline; /* Optional: underline on hover */
+}
