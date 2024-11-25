@@ -104,9 +104,12 @@ p {
 }
 
 a.custom-link {
-    color: grey; /* Set link color to grey */
+    color: #f4f4f4; /* Set link color to grey */
     text-decoration: none; /* Remove underline */
 }
+a.custom-link:visited {
+        color: #f4f4f4; /* Ensure the same color for visited links */
+    }
 a.custom-link:hover {
     text-decoration: underline; /* Optional: underline on hover */
 }
