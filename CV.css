@@ -1,38 +1,52 @@
-body {
+/* Global Styles */
+body { 
     font-family: Georgia, serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
+
+/* Header Styles */
 header {
     background: #333;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
 }
+
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center navigation links */
 }
+
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    margin: 0 10px;
 }
+
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 16px;
 }
+
+/* Main Content Styles */
 main {
     width: 80%;
     margin: auto;
     padding: 20px;
 }
+
 section {
     background: #fff;
     margin: 20px 0;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+/* Footer Styles */
 footer {
     text-align: center;
     padding: 1rem 0;
@@ -43,6 +57,7 @@ footer {
     bottom: 0;
 }
 
+/* Hero Section Styles */
 #hero {
     background-color: #f8f8f8;
     padding: 50px 0;
@@ -52,83 +67,114 @@ footer {
     max-width: 800px;
     margin: auto;
     display: flex;
+    flex-wrap: wrap; /* Ensures content wraps on smaller screens */
     justify-content: space-between;
     align-items: center;
-    gap: 20px
+    gap: 20px;
 }
 
 .hero-text {
-    flex: 1; /* Take up remaining space */
-    text-align: justify; /* Align text both left and right */
+    flex: 1; 
+    text-align: justify;
 }
 
 .hero-image {
-    flex: 1; /* Take up remaining space */
-    text-align: right; /* Align content to the right */
+    flex: 1;
+    text-align: right;
 }
 
 .hero-image img {
-    max-width: 100%; /* Ensure the image scales down if it's too large */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 50%; /* Optional: Rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Typography */
 p {
     font-family: Corbel, serif;
+    line-height: 1.6; /* Improves readability */
 }
 
-.heading {font-family: Georgia, serif}
+.heading {
+    font-family: Georgia, serif;
+    font-size: 1.5rem;
+}
 
+/* Publication List */
 .publication-list {
     display: flex;
     flex-direction: column;
 }
+
 .publication-item {
     display: flex;
     align-items: flex-start;
+    margin-bottom: 10px;
 }
+
 .status {
-    width: 120px; /* Adjust width as needed */
+    width: 120px;
     font-weight: bold;
     flex-shrink: 0;
 }
+
 .details {
     flex-grow: 1;
 }
 
+/* Right-Aligned Text */
 .right-align {
     text-align: right;
     display: block;
     font-family: Corbel, serif;
 }
 
+/* Centered Link */
 .center-link {
-    text-align: center;   /* Centers the download link horizontally */
-    margin-top: 20px;     /* Adds additional spacing above the link if needed */
+    text-align: center;
+    margin-top: 20px;
 }
 
+/* Embedded PDF Styles */
 embed {
-    display: block;       /* Ensures the embed is treated as a block-level element */
-    margin: 0 auto 20px;  /* Adds spacing below the PDF viewer */
-    width: 265%;          /* Responsive width */
-    height: 600px;        /* Fixed height for the PDF viewer */
+    display: block;
+    margin: 0 auto 20px;
+    width: 100%; /* Default width for responsiveness */
+    height: 600px;
 }
 
+/* Links */
 a.custom-link {
-    color: #666666; 
-    text-decoration: none; 
-}
-a.custom-link:visited {
-        color: #666666; 
-    }
-a.custom-link:hover {
-    text-decoration: underline; /* Optional: underline on hover */
+    color: #666666;
+    text-decoration: none;
+    font-size: 16px;
 }
 
+a.custom-link:visited {
+    color: #666666;
+}
+
+a.custom-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
     embed {
         width: 100%;
         height: 500px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation links vertically */
+    }
+
+    .hero-content {
+        flex-direction: column; /* Stack hero content vertically */
+    }
+
+    footer {
+        position: static; /* Avoid overlapping on smaller screens */
     }
 }
