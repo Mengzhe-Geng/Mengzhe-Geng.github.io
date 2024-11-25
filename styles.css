@@ -74,29 +74,6 @@ footer {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
 }
 
-/* Mobile responsive styles */
-@media only screen and (max-width: 768px) {
-    .hero-content {
-        flex-direction: column; /* Stack image and text vertically */
-        align-items: center; /* Center-align both image and text */
-        padding: 0 20px; /* Add padding on the sides for better spacing */
-    }
-
-    .hero-text, .hero-image {
-        width: 100%; /* Both image and text take full width */
-        text-align: center; /* Center-align text */
-        margin: 0; /* Remove any default margin */
-        padding: 10px 0; /* Add vertical padding for spacing */
-    }
-
-    .hero-image img {
-        max-width: 80%; /* Make the image 80% of the container width */
-        height: auto; /* Maintain aspect ratio */
-        border-radius: 50%; /* Optional: Rounded corners */
-        margin-top: 20px; /* Add some space above the image */
-    }
-}
-
 p {
     font-family: Corbel, serif;
 }
@@ -135,4 +112,17 @@ a.custom-link:visited {
     }
 a.custom-link:hover {
     text-decoration: underline; /* Optional: underline on hover */
+}
+
+@media (max-width: 600px) {
+    .hero-content {
+        flex-direction: column-reverse; /* Stack the content vertically on smaller screens */
+        text-align: center; /* Center-align text for better readability on small screens */
+    }
+    .hero-image, .hero-text {
+        flex: none; /* Reset flex property */
+    }
+    .hero-image img {
+        margin-bottom: 20px; /* Add spacing between image and text */
+    }
 }
