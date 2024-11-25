@@ -133,7 +133,7 @@ p {
 /* Centered Link */
 .center-link {
     text-align: center;
-    margin-top: 20px;
+    margin-bottom: 20px; /* Add spacing below the link */
 }
 
 /* Embedded PDF Styles */
