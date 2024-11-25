@@ -104,7 +104,7 @@ p {
 }
 
 a.custom-link {
-    color: blue; /* Set link color to blue */
+    color: grey; /* Set link color to grey */
     text-decoration: none; /* Remove underline */
 }
 a.custom-link:hover {
