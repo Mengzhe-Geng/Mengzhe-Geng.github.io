@@ -103,6 +103,18 @@ p {
     font-family: Corbel, serif;
 }
 
+embed {
+    display: block;       /* Ensures the embed is treated as a block-level element */
+    margin: 0 auto 20px;  /* Adds spacing below the PDF viewer */
+    width: 100%;          /* Responsive width */
+    height: 600px;        /* Fixed height for the PDF viewer */
+}
+
+.center-link {
+    text-align: center;   /* Centers the download link horizontally */
+    margin-top: 20px;     /* Adds additional spacing above the link if needed */
+}
+
 a.custom-link {
     color: #666666; 
     text-decoration: none; 
