@@ -167,7 +167,8 @@ a.custom-link:hover {
     }
 
     nav ul {
-        flex-direction: column; /* Stack navigation links vertically */
+        flex-direction: row; /* Make navigation links horizontal */
+        justify-content: space-around; /* Distribute links evenly */
     }
 
     .hero-content {
