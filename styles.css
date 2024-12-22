@@ -114,6 +114,17 @@ a.custom-link:hover {
     text-decoration: underline; /* Optional: underline on hover */
 }
 
+a.custom-link2 {
+    color:  #000000; 
+    text-decoration: none; 
+}
+a.custom-link2:visited {
+        color: #000000; 
+    }
+a.custom-link2:hover {
+    text-decoration: underline; /* Optional: underline on hover */
+}
+
 @media (max-width: 600px) {
     .hero-content {
         flex-direction: column-reverse; /* Stack the content vertically on smaller screens */
